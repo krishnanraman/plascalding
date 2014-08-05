@@ -1,0 +1,49 @@
+$ scald.rb --hdfs-local pla.scala --n 10 --a 2 --b 3 --c 4
+sh: ./sbt: No such file or directory
+14/08/05 16:21:50 INFO property.AppProps: using app.id: 5115658D90E5494ABCF2DF740D0DBD90
+14/08/05 16:21:50 INFO util.Version: Concurrent, Inc - Cascading 2.5.5
+14/08/05 16:21:50 INFO flow.Flow: [] starting
+14/08/05 16:21:50 INFO flow.Flow: []  source: MemoryTap["NullScheme"]["0.18289407474257469"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: MemoryTap["NullScheme"]["0.05403463334715919"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0]]"]["weights1"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0:1]]"]["points"]
+14/08/05 16:21:50 INFO flow.Flow: []  parallel execution is enabled: true
+14/08/05 16:21:50 INFO flow.Flow: []  starting jobs: 1
+14/08/05 16:21:50 INFO flow.Flow: []  allocating threads: 1
+14/08/05 16:21:50 INFO flow.FlowStep: [] starting step: local
+14/08/05 16:21:50 INFO flow.Flow: [] starting
+14/08/05 16:21:50 INFO flow.Flow: []  source: MemoryTap["NullScheme"]["0.8957806754885277"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: MemoryTap["NullScheme"]["0.0825412048289691"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0]]"]["weights2"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0:1]]"]["points"]
+14/08/05 16:21:50 INFO flow.Flow: []  parallel execution is enabled: true
+14/08/05 16:21:50 INFO flow.Flow: []  starting jobs: 1
+14/08/05 16:21:50 INFO flow.Flow: []  allocating threads: 1
+14/08/05 16:21:50 INFO flow.FlowStep: [] starting step: local
+14/08/05 16:21:50 INFO flow.Flow: [] starting
+14/08/05 16:21:50 INFO flow.Flow: []  source: MemoryTap["NullScheme"]["0.4196437826388566"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0:1]]"]["points"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0]]"]["weights3"]
+14/08/05 16:21:50 INFO flow.Flow: []  sink: MemoryTap["NullScheme"]["0.08840196224293917"]
+14/08/05 16:21:50 INFO flow.Flow: []  parallel execution is enabled: true
+14/08/05 16:21:50 INFO flow.Flow: []  starting jobs: 1
+14/08/05 16:21:50 INFO flow.Flow: []  allocating threads: 1
+14/08/05 16:21:50 INFO flow.FlowStep: [] starting step: local
+14/08/05 16:21:51 INFO flow.Flow: [] starting
+14/08/05 16:21:51 INFO flow.Flow: []  source: MemoryTap["NullScheme"]["0.48946972614091855"]
+14/08/05 16:21:51 INFO flow.Flow: []  sink: MemoryTap["NullScheme"]["0.7938741479729916"]
+14/08/05 16:21:51 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0:1]]"]["points"]
+14/08/05 16:21:51 INFO flow.Flow: []  sink: FileTap["TextDelimited[[0]]"]["weights4"]
+14/08/05 16:21:51 INFO flow.Flow: []  parallel execution is enabled: true
+14/08/05 16:21:51 INFO flow.Flow: []  starting jobs: 1
+14/08/05 16:21:51 INFO flow.Flow: []  allocating threads: 1
+14/08/05 16:21:51 INFO flow.FlowStep: [] starting step: local
+exiting
+
+
+$ grep "" weights*
+weights:List(-40.678790389646565, 20.0, 1.0)
+weights1:List(-21.80253026187009, -6.0, -1.0)
+weights2:List(-29.368884127069023, -12.0, -2.0)
+weights3:List(-18.74595074552924, -24.0, -4.0)
+weights4:List(-18.74595074552924, -24.0, -4.0)
