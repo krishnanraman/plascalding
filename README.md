@@ -7,7 +7,6 @@ Single Layer Perceptron Learning Algorithm: Supervised Classification
 aka W = W + X
 
 PLA Algo:
---
 Given a (guess) vector W,
 For all vectors X, we want sign(W dot X) == sign(X)
 For any X, if sign does not agree,
