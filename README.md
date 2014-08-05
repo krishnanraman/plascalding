@@ -20,3 +20,4 @@ $ scald.rb --hdfs-local pla.scala --n 10 --a 2 --b 3 --c 4
 where 
 n = number of points to classify
 a, b, c = coefficients of the line ax + by + c = 0
+![Alt text](/https://raw.githubusercontent.com/krishnanraman/plascalding/master/screenshot.png)
